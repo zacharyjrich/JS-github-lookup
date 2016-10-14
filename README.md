@@ -10,14 +10,11 @@ This project uses the GitHub API to have a user input a GitHub username in a for
 
 ## Objectives
 
-### 1
-Create a website where the user can enter a GitHub username into a form, submit it, and see names and descriptions of that person's public repositories.
+1) Create a website where the user can enter a GitHub username into a form, submit it, and see names and descriptions of that person's public repositories.
 
-### 2
-Use at least two JavaScript files: One to receive form input, another to make an API request and display results.
+2) Use at least two JavaScript files: One to receive form input, another to make an API request and display results.
 
-### 3
-Place API token in an .env file at the top level of your directory and include in .gitignore file.
+3) Place API token in an .env file at the top level of your directory and include in .gitignore file.
 
 ## Setup/Installation Requirements
 
