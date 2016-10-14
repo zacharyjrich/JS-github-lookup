@@ -8,13 +8,19 @@
     <script type="text/javascript" src="build/js/app.js"></script>
   </head>
   <body>
-    <div class="container text-center">
+    <div class="container-fluid text-center" id="header">
       <h1>Github User Lookup</h1>
-      <h3>Find repo names & descriptions! Enter a github user name!</h3>
-      <label for="user">Enter User Name</label>
-      <input id="user" type="text">
-      <button class="btn-warning" id="getResults">Get the Results</button>
-      <div id="showResults"></div>
+      <h4>Find repo names & descriptions! Enter a github user name!</h4>
+    </div>
+
+    <div class="container-fluid text-center" id="form">
+      <div class="form">
+        <label for="user">Enter User Name</label>
+        <input id="user" type="text">
+        <button class="btn-warning" id="getResults">Get the Results</button>
+      </div>
+      <div id="usernameResults"></div>
+      <div id="repoResults"></div>
     </div>
   </body>
 </html>
