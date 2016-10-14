@@ -1,9 +1,5 @@
 var Repo = require('./../js/github-lookup.js').reposModule;
 
-// var displayRepNames = function(user, repName) {
-//   $('#showResults').text("Rep Names are" + repName);
-// }
-
 $(document).ready(function() {
   var currentUserObject = new Repo();
   $('#getResults').click(function() {
@@ -12,6 +8,5 @@ $(document).ready(function() {
     $('#showResults').text('blah');
     currentUserObject.getUser(userName);
     currentUserObject.getRepos(userName);
-
   });
 });
