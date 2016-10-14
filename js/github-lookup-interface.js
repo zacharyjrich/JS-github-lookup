@@ -1,5 +1,11 @@
-var Github = require('./../js/github-lookup.js').githubModule;
+var Repo = require('./../js/github-lookup.js').reposModule;
 
 $(document).ready(function() {
-
+  var currentUserObject = new Repo();
+  $('#getResults').click(function() {
+    var userName = $('#user').val();
+    $('#user').val("");
+    $('#showResults').text('blah');
+    currentUserObject.getRepos();
+  });
 });
