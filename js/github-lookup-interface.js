@@ -10,6 +10,8 @@ $(document).ready(function() {
     var userName = $('#user').val();
     $('#user').val("");
     $('#showResults').text('blah');
+    currentUserObject.getUser(userName);
     currentUserObject.getRepos(userName);
+
   });
 });
