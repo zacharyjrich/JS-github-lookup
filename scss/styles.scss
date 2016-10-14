@@ -1,15 +1,35 @@
-$green: #7FC5A8;
+$blue: #087F8C;
+$white: #FFFFFA;
+$grey: #808D8E;
+$header: #708089;
 
 body {
-  background-color: $green;
+  background-image: url("../../img/Github.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   font-family: Verdana;
+  // filter: blur(20px) grayscale(20%);
+  color: $white;
 }
 
 #header {
-  background: rgba(76, 175, 80, 0.6);
+  background: rgba($blue, .7);
   padding: 30px;
 }
 
 #form {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 
+.results {
+  background-color: rgba($grey, .8);
+  border-radius: 30px;
+  margin-top: 50px;
+
+}
+
+.userName {
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
