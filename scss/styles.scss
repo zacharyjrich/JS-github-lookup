@@ -1,32 +1,33 @@
 $blue: #087F8C;
 $white: #FFFFFA;
 $grey: #808D8E;
-$header: #708089;
 
 body {
   background-image: url("../../img/Github.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
-  font-family: Verdana;
-  // filter: blur(20px) grayscale(20%);
+  background-repeat: no-repeat;;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   color: $white;
 }
 
 #header {
+  text-align: center;
   background: rgba($blue, .7);
   padding: 30px;
+  text-shadow: 2px 2px black;
 }
 
 #form {
+  text-align: center;
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-.results {
+#results {
+  text-align: center;
   background-color: rgba($grey, .8);
   border-radius: 30px;
-  margin-top: 50px;
-
+  text-shadow: 1px 1px black;
 }
 
 .userName {

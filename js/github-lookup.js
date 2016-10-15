@@ -14,7 +14,14 @@ Repo.prototype.getUser = function(user) {
 Repo.prototype.getRepos = function(user) {
   $.get('https://api.github.com/users/' + user + '/repos?access_token=' + apiKey, function(response){
     for(var i = 0; i < response.length; i++) {
-      $('#repoResults').append("<p class='repo_des'>Repo/Description: " + response[i].name + " - " + response[i].description + "</p>");
+      var description = response[i].description;
+      if (description === null) {
+        description = "";
+        $('#repoResults').append("<p class='repo_des'>Repository: " + response[i].name + "</p>");
+      } else {
+        $('#repoResults').append("<p class='repo_des'>Repository: " + response[i].name + " Desc: " + description + "</p>");
+      }
+
     }
   }).fail(function(error){
     $('#repoResults').text(error.responseJSON.message);
