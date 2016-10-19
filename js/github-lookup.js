@@ -9,6 +9,7 @@ Repo.prototype.getUser = function(user) {
   }).fail(function(error){
     $('#usernameResults').text(error.responseJSON.message);
   });
+  $('#usernameResults').text("");
 }
 
 Repo.prototype.getRepos = function(user) {
@@ -26,6 +27,7 @@ Repo.prototype.getRepos = function(user) {
   }).fail(function(error){
     $('#repoResults').text(error.responseJSON.message);
   });
+  $('#repoResults').text("");
 }
 
 exports.reposModule = Repo;
