@@ -7,9 +7,9 @@ Repo.prototype.getUser = function(user) {
   $.get('https://api.github.com/users/' + user + '?access_token=' + apiKey).then(function(response){
     $('#usernameResults').append("<h3 class='userName'>User Name: " + user + "</h3>");
   }).fail(function(error){
-    $('#usernameResults').text(error.responseJSON.message);
+    $('#usernameResults').append("<h3 class='userFail'>Sorry, no user found, please try again!</h3>");
   });
-  $('#usernameResults').text("");
+    $('#usernameResults').text("");
 }
 
 Repo.prototype.getRepos = function(user) {
@@ -25,9 +25,9 @@ Repo.prototype.getRepos = function(user) {
       }
     }
   }).fail(function(error){
-    $('#repoResults').text(error.responseJSON.message);
+    $('#repoResults').text("");
   });
-  $('#repoResults').text("");
+    $('#repoResults').text("");
 }
 
 exports.reposModule = Repo;
