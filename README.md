@@ -22,8 +22,6 @@ This project uses the GitHub API to have a user input a GitHub username in a for
 * Make sure to change directory with $ cd JS-github-lookup
 * Go to Settings area of your GitHub account, select Personal Access Tokens from the sidebar, and hit Generate New Token. This is used to access the Github information for this project to function.
 * Place your token (or API Key) in an .env file at the top level of your directory.
-* Install Node Project Manager with $ npm init
-* Install Bower with $ bower init
 * Run $ npm install -1
 * Run $ bower install
 * Run $ gulp serve
